@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page Demo</h1>
+    <button id="theme-toggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <!-- Part 2: Counter Game -->
+  <section id="counter-section">
+    <h2>Click Counter</h2>
+    <p>You've clicked <span id="click-count">0</span> times!</p>
+    <button id="click-btn">Click Me</button>
+  </section>
+
+  <!-- Part 2: Collapsible FAQ -->
+  <section id="faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <div class="faq-answer">JavaScript is the scripting language of the Web.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Why validate forms?</button>
+      <div class="faq-answer">Validation prevents bad data and improves UX.</div>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section id="form-section">
+    <h2>Sign Up Form</h2>
+    <form id="signup-form" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" name="name" />
+        <small class="error-msg"></small>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" id="email" name="email" />
+        <small class="error-msg"></small>
+      </label>
+
+      <label>
+        Password:
+        <input type="password" id="password" name="password" />
+        <small class="error-msg"></small>
+      </label>
+
+      <button type="submit">Register</button>
+      <div id="form-feedback"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
